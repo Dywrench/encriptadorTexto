@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+    --background-color: #ffffff;
+    --header-background-color: #ffffff;
+    --header-border-color: #e0e0e0;
+    --logo-height: 5%;
+    --logo-margin-left: 2%;
+    --pagina-background-color: #ffffff;
+    --pagina-padding: 20px;
+    --pagina-border-radius: 10px;
+    --pagina-box-shadow: rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
+    --input-width: 300px;
+    --input-height: 100px;
+    --input-margin-bottom: 200px;
+    --input-padding: 10px;
+    --input-font-size: 16px;
+    --input-border-color: #ffffff;
+    --input-border-radius: 5px;
+    --botones-gap: 10px;
+    --botones-margin-bottom: 20px;
+    --button-padding: 10px 20px;
+    --button-border-radius: 5px;
+    --button-background-color: #0A3871;
+    --button-color: #ffffff;
+    --button-hover-background-color: #0A3871;
+    --resultado-font-size: 24px;
+    --resultado-color: #343A40;
+    --resultado-margin-top: 20px;
+    --muñeco-max-width: 336px;
+    --muñeco-margin-bottom: 20px;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.header {
+    position: fixed;
+    flex-direction: row;
+    gap: 20px;
+    position: static;
+    top: 2px;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 2px;
+    background-color: var(--header-background-color);
+}
+
+.logo {
+    position: absolute;
+
+    flex-direction: column;
+    height: var(--logo-height);
+    margin-left: var(--logo-margin-left);
+    background-color: var(--main-background-color);
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    color: #343A40;
+    font-size: 24px;
+}
+
+.pagina_inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--pagina-background-color);
+    padding: var(--pagina-padding);
+    border-radius: var(--pagina-border-radius);
+    box-shadow: 0 2px 4px var(--pagina-box-shadow);
+}
+
+#inputTexto {
+    width: var(--input-width);
+    height: var(--input-height);
+    margin-bottom: var(--input-margin-bottom);
+    padding: var(--input-padding);
+    font-size: var(--input-font-size);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    resize: none;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: var(--botones-gap);
+    margin-bottom: var(--botones-margin-bottom);
+    
+}
+
+.encriptar, .desencriptar {
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    width: 228px;
+    height: 57px;
+    transition: background-color 0.3s;
+    border-radius: 24px;
+}
+
+.encriptar {
+    background-color: #0A3871;
+    color: #ffffff;
+    border-radius: 24px;
+}
+
+.desencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+}
+
+.desencriptar:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+}
+
+#mensajeIngresarTexto {
+
+    font-family: var(--fuente-inter);
+}
+.contenedor{
+     border: 8px solid #000; 
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.nota{
+    display: flexbox;
+    position: relative;
+    top: -90px; 
+    left: 0px; 
+    transform: translate(-50%, -50%);
+}
+
+#muñeco_seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 2px;
+    margin: 5%; 
+    border: 8px ; 
+    background-color: var(--pagina-background-color);
+    padding: var(--pagina-padding);
+    border-radius: var(--pagina-border-radius);
+    box-shadow: 0 2px 4px var(--pagina-box-shadow);
+    left: 10%;
+    top: -10%;
+    border-radius: 32px;
+    padding: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--pagina-background-color);
+    border-radius: var(--pagina-border-radius);
+    box-shadow: 0 2px 4px var(--pagina-box-shadow);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 30px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.mensajeResultado {
+    font-size: 24px;
+    text-align: center;
+    color: #343A40;
+    position: absolute;
+    top: 68%;
+}
+
+#mensajeIngresarTexto {
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    top: 79%;
+    
+}
+
+
+
+.muñeco {
+    display: flexbox;
+    align-items: center;
+    max-width: var(--muñeco-max-width);
+    height: 304px;
+    top: 2838px;
+    left: 1032px;
+    align-items: first baseline;
+    margin-bottom: var(--muñeco-margin-bottom);
+}
+
+
+.copiar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 26px solid #0A3871;
+    padding: var(--button-padding);
+    border: none;
+    cursor: pointer;
+    width: 230px;
+    height: 50px;
+    border-radius: 24px;
+}
+
+
+
+
+.botones__copiar {
+    position: relative;
+
+}
+
+#botonesCopiar{
+    
+    position: relative;
+    display: none;
+    color: #ffffff;
+    padding: var(--button-padding);
+    border-radius: -2px;
+    background-color: #D8DFE8;
+    border: 3px solid #0A3871;
+    border-radius: 20px;
+    position: fixed;
+    display: none;  
+    right: 20%;
+    top: 55%;
+    z-index: 1000;
+    padding: 0%;
+}
+
+
+.oculto {
+    display: none;
+}
+#textoEncriptado{
+    font-size: 2004px;
+
+}
+#texto_encriptado_mostrar{
+    display: none;
+}
