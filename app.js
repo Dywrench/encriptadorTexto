@@ -7,7 +7,7 @@ function encriptarTexto() {
     const mensajeResultado = document.getElementById("mensajeResultado");
     const mensajeIngresarTexto = document.getElementById("mensajeIngresarTexto");
     const botonesCopiar = document.getElementById("botonesCopiar");
-    console.log(inputTexto);
+
     if (inputTexto && mensajeTextoEncriptado && muñeco && mensajeResultado && mensajeIngresarTexto && botonesCopiar) {
         if (!textoYaEncriptado(inputTexto)) {
             let textoEncriptado = inputTexto
@@ -24,16 +24,13 @@ function encriptarTexto() {
                 mensajeIngresarTexto.style.display = "none";
                 mensajeTextoEncriptado.style.display = "block";
                 botonesCopiar.style.display = "block";
-
                 textoEncriptadoActual = textoEncriptado;
             }
         }
     }
-    console.log(resultadoTexto);
 }
 
 function desencriptarTexto() {
-    limpiarCaja();
     const inputTexto = document.getElementById("inputTexto").value;
     const mensajeTextoEncriptado = document.getElementById("resultadoTexto");
     const muñeco = document.getElementById("muñeco");
@@ -55,9 +52,6 @@ function desencriptarTexto() {
         mensajeTextoEncriptado.style.display = "block";
         botonesCopiar.style.display = "block";
     }
-    console.log(mensajeTextoEncriptado);
-    console.log(inputTexto);
-    console.log(resultadoTexto);
 }
 
 function textoYaEncriptado(texto) {
@@ -66,11 +60,5 @@ function textoYaEncriptado(texto) {
 
 function copiarTexto() {
     const resultadoTexto = document.getElementById("resultadoTexto").textContent;
-
     navigator.clipboard.writeText(resultadoTexto);
-}
-
-function limpiarCaja() {
-    const resultadoTextoElement = document.getElementById("resultadoTexto");
-    resultadoTextoElement.textContent = "";
 }
