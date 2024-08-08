@@ -148,7 +148,7 @@ body {
     font-family: var(--fuente-inter);
 }
 .contenedor{
-     border: 8px solid #000; 
+    border: 8px solid #000; 
     position: relative;
     width: 100%;
     height: 500px;
@@ -175,7 +175,10 @@ body {
     padding: var(--pagina-padding); 
     border-radius: var(--pagina-border-radius); 
     box-shadow: 0 2px 4px var(--pagina-box-shadow); 
+    
     left: 10%; 
+
+
     top: -10%; 
     border-radius: 32px; 
     padding: 182px; 
@@ -264,9 +267,13 @@ body {
 }
 #texto_encriptado_mostrar{
     position: absolute;
-    top:20px;
-    font-size: 15px;
-    max-width: 100%; 
+    top: 20px;
+    font-size: 20px;
+    max-width: 100%;
     overflow-wrap: break-word;
-    word-wrap: break-word; 
+    word-wrap: break-word;
+    text-align: left; 
+}
+
+@media (max-width: 1200px) {
 }
