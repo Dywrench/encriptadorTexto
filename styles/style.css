@@ -263,5 +263,10 @@ body {
 
 }
 #texto_encriptado_mostrar{
-    display: none;
+    position: absolute;
+    top:20px;
+    font-size: 15px;
+    max-width: 100%; 
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
 }
