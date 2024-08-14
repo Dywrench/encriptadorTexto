@@ -95,8 +95,10 @@ body {
     color: #0A3871;
     width: var(--input-width);
     height: var(--input-height);
-    margin-bottom: var(--input-margin-bottom);
+    margin-bottom: 150px;
     padding: var(--input-padding);
+    padding-bottom: 90px;
+
     font-size: var(--input-font-size);
     border: 1px;
     border-radius: var(--input-border-radius);
@@ -202,6 +204,8 @@ body {
     color: #343A40;
     position: absolute;
     top: 68%;
+    
+    
 }
 
 #mensajeIngresarTexto {
@@ -223,11 +227,12 @@ body {
     left: 1032px; 
     align-items: first baseline; 
     margin-bottom: var(--muñeco-margin-bottom); 
+    
 } 
 
 .copiar {
     display: flexbox;
-    background-color: #D8DFE8;
+   
     color: #0A3871;
     border: 26px solid #0A3871;
     padding: var(--button-padding);
@@ -275,5 +280,76 @@ body {
     text-align: left; 
 }
 
-@media (max-width: 1200px) {
+#resultadoTexto{
+
+    color: #495057;
+    width: var(--input-width);
+    height: var(--input-height);
+    margin-bottom: var(--input-margin-bottom);
+    
+    font-size: var(--input-font-size);
+    border: 1px;
+    border-radius: var(--input-border-radius);
+    height: 50px;
+    overflow-y: auto;
+    padding: 30px;
+    padding-bottom: 140px;
+    
+}
+
+@media (max-width: 688px) {
+    #muñeco_seccion{
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        margin: 0px;
+        top: 50%;
+        left: -10px;
+        width:  2px;
+        
+        padding-top: 0%;
+        padding-bottom: 45%;
+        padding-left: 42%;
+        border-radius: 34px;
+       
+    }
+
+    .pagina_inicio{
+        display: flexbox;
+        position: relative;
+        left: 69%;
+        box-shadow: none;
+    }
+    #muñeco{
+        display: none;
+    }
+    #mensajeIngresarTexto{
+        margin: 1px;
+        top: 50%;
+        left: 8%;
+       
+    }
+    .mensajeResultado {
+        top: 15%;
+        left: 10%;
+    }
+    #resultadoTexto{
+        position: relative;
+        margin: 2px;
+        top: -5px;
+        left: -220px;
+        padding-bottom: 100px;
+
+    }
+    
+    #botonesCopiar{
+        position: absolute;
+        top: px;
+        right: px;
+        
+
+    }
+    .copiar {
+        width: 320PX;
+    }
 }
